@@ -14,10 +14,24 @@ const imageSequence = [
         translation: 'Seeking knowledge.',
         position: { left: '0%', top: '0%' }
     },
-    // Continue adding images and translations as needed
+    {
+        image: 'img/branch4_clicked.png',
+        translation: 'Building a new home.',
+        position: { left: '0%', top: '0%' }
+    },
+    {
+        image: 'img/branch5_clicked.png',
+        translation: 'Creating advanced technology.',
+        position: { left: '0%', top: '0%' }
+    },
     {
         image: 'img/branch3_clicked.png',
-        translation: 'Discovering the unknown.',
+        translation: 'Discovering the Eye of the Universe.',
+        position: { left: '0%', top: '0%' }
+    },
+    {
+        image: 'img/branch6_clicked.png',
+        translation: 'Our journey ends here.',
         position: { left: '0%', top: '0%' }
     }
 ];
