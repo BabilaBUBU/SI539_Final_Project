@@ -40,7 +40,6 @@ let currentIndex = 0;
 
 function addImage() {
     if (currentIndex >= imageSequence.length) {
-        // Remove click events from images
         const images = document.querySelectorAll('.nomai-image');
         images.forEach(img => img.removeEventListener('click', addImage));
         return;
@@ -50,27 +49,24 @@ function addImage() {
     const translationElement = document.getElementById('translation');
     const imageData = imageSequence[currentIndex];
 
-    // Create new image element
     const imgElement = document.createElement('img');
     imgElement.src = imageData.image;
     imgElement.alt = 'Nomai Branch';
     imgElement.classList.add('nomai-image');
     imgElement.style.left = imageData.position.left;
     imgElement.style.top = imageData.position.top;
-    imgElement.style.zIndex = currentIndex; // Ensure proper stacking
+    imgElement.style.zIndex = currentIndex;
 
-    // Add click event to the new image
     imgElement.addEventListener('click', addImage);
-
-    // Add the image to the container
     container.appendChild(imgElement);
 
-    // Update the translation
-    translationElement.textContent = imageData.translation;
+    // // Update the translation
+    // translationElement.textContent = imageData.translation;
 
-    // Increment index for next image
+    // Append to the existing translation
+    translationElement.textContent += ' ' + imageData.translation;
+
     currentIndex++;
 }
 
-// Initial content load
 addImage();
