@@ -42,57 +42,75 @@
         </section>
         <section id="solar-system">
             <h2>The Solar System</h2>
-            <p>
-                The Outer Wilds solar system is a vibrant and dynamic collection of planets, moons, and celestial phenomena, each with its 
-                own unique story to tell. Key highlights include:
-            </p>
-            <ul>
-                <li><strong>Timber Hearth:</strong> A lush, forested planet and the home of the Hearthians.</li>
-                <li><strong>Ember Twin and Ash Twin:</strong> A pair of closely orbiting planets locked in an eternal dance, where sand flows 
-                like an hourglass between them.</li>
-                <li><strong>Brittle Hollow:</strong> A frozen planet slowly crumbling into a black hole at its core.</li>
-                <li><strong>Giant's Deep:</strong> A massive ocean world with towering cyclones and mysteries hidden in its depths.</li>
-                <li><strong>Dark Bramble:</strong> A haunting, thorny maze of a planet where danger lurks around every corner.</li>
-            </ul>
-            <p>
-                Each celestial body offers unique challenges and breathtaking beauty, encouraging explorers to push the limits of their ingenuity.
-            </p>
-            <img src="image/index/solar-system.png" alt="Outer Wilds Solar System" class="image">
+            <div class="content-holder">
+                <div class="text">
+                    <p>
+                        The Outer Wilds solar system is a vibrant and dynamic collection of planets, moons, and celestial phenomena, each with its 
+                        own unique story to tell. Key highlights include:
+                    </p>
+                    <ul>
+                        <li><strong>Timber Hearth:</strong> A lush, forested planet and the home of the Hearthians.</li>
+                        <li><strong>Ember Twin and Ash Twin:</strong> A pair of closely orbiting planets locked in an eternal dance, where sand flows 
+                        like an hourglass between them.</li>
+                        <li><strong>Brittle Hollow:</strong> A frozen planet slowly crumbling into a black hole at its core.</li>
+                        <li><strong>Giant's Deep:</strong> A massive ocean world with towering cyclones and mysteries hidden in its depths.</li>
+                        <li><strong>Dark Bramble:</strong> A haunting, thorny maze of a planet where danger lurks around every corner.</li>
+                    </ul>
+                    <p>
+                        Each celestial body offers unique challenges and breathtaking beauty, encouraging explorers to push the limits of their ingenuity.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="image/index/solar-system.png" alt="Solar System">
+            </div>
         </section>
         <section id="hearthians">
             <h2>The Hearthians</h2>
-            <p>
-                The Hearthians are a warm, curious, and inventive species native to <strong>Timber Hearth</strong>. Despite their humble beginnings, 
-                they have achieved remarkable advancements in space exploration, creating the Outer Wilds Ventures program to explore the stars. 
-                Their close-knit community thrives on collaboration, music, and storytelling.
-            </p>
-            <p>
-                Hearthians have a unique perspective on the universe, valuing the connections between people and places. They live for discovery, 
-                celebrating every step of their journey with songs, laughter, and camaraderie. Whether it's roasting marshmallows by the campfire 
-                or piloting makeshift spacecraft, their spirit of adventure is unmatched.
-            </p>
-            <img src="image/index/explore_team.webp" alt="Hearthians" class="image">
+            <div class="content-holder">
+                <div class="image">
+                    <img src="image/index/explore_team.webp" alt="Hearthians" class="big-image">
+                </div>
+                <div class="text">
+                    <p>
+                        The Hearthians are a warm, curious, and inventive species native to <strong>Timber Hearth</strong>. Despite their humble beginnings, 
+                        they have achieved remarkable advancements in space exploration, creating the Outer Wilds Ventures program to explore the stars. 
+                        Their close-knit community thrives on collaboration, music, and storytelling.
+                    </p>
+                    <p>
+                        Hearthians have a unique perspective on the universe, valuing the connections between people and places. They live for discovery, 
+                        celebrating every step of their journey with songs, laughter, and camaraderie. Whether it's roasting marshmallows by the campfire 
+                        or piloting makeshift spacecraft, their spirit of adventure is unmatched.
+                    </p>
+                </div>
         </section>
         <section id="nomai">
             <h2>The Nomai</h2>
-            <p>
-                The Nomai are an ancient, sophisticated species who once roamed the universe in pursuit of knowledge and understanding. Driven by 
-                their insatiable curiosity, they constructed intricate technologies and left behind ruins that still puzzle explorers today.
-            </p>
-            <p>
-                The Nomai were masterful engineers and scientists, crafting devices like the <strong>Quantum Moon Locator</strong> and the 
-                <strong>Orbital Probe Cannon</strong>. Their writings, found etched on walls and tablets, reveal their philosophical nature and their 
-                profound dedication to understanding the nature of existence.
-            </p>
-            <p>
-                Though their fate remains a mystery, the Nomai's legacy lives on in the stories and discoveries they left behind. They remind us of 
-                the endless pursuit of knowledge and the interconnectedness of all life.
-            </p>
-            <img src="image/index/nomai_people.webp" alt="Nomai Artifacts" class="image">
+            <div class="content-holder">
+                <div class="text">
+                    <p>
+                        The Nomai are an ancient, sophisticated species who once roamed the universe in pursuit of knowledge and understanding. Driven by 
+                        their insatiable curiosity, they constructed intricate technologies and left behind ruins that still puzzle explorers today.
+                    </p>
+                    <p>
+                        The Nomai were masterful engineers and scientists, crafting devices like the <strong>Quantum Moon Locator</strong> and the 
+                        <strong>Orbital Probe Cannon</strong>. Their writings, found etched on walls and tablets, reveal their philosophical nature and 
+                        their profound dedication to understanding the nature of existence.
+                    </p>
+                    <p>
+                        Though their fate remains a mystery, the Nomai's legacy lives on in the stories and discoveries they left behind. They remind us of 
+                        the endless pursuit of knowledge and the interconnectedness of all life.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="image/index/nomai_people.webp" alt="Nomai Artifacts">
+                </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Outer Wilds Fan Page | Created by a fellow explorer</p>
+        <p>&copy; <span id="year"></span> Outer Wilds Fan Page | Created by a fellow explorer</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>
