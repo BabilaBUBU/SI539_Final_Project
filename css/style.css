@@ -26,8 +26,25 @@
     font-style: normal;
 }
 
+.skip-to-content {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 100;
+    text-decoration: none;
+    transition: top 0.3s ease;
+  }
+  
+  .skip-to-content:focus {
+    top: 0;
+  }
+
 body {
     font-family: 'Outer Light', sans-serif;
+    font-size: 1.2em;
     margin: 0 auto;
     padding: 20px;
     width: 80vw;
@@ -113,8 +130,8 @@ header h1 {
 }
 
 .main-content h2 {
-    color: #d6a200;
-    border-bottom: 2px solid #f6f6617a;
+    color: #FF7D25;
+    border-bottom: 2px solid #d6a200;
     width: 30%;
     padding-bottom: 5px;
     margin-bottom: 20px;
