@@ -1,0 +1,39 @@
+.planet-info-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.planet-info-holder .info{
+    grid-column: 1 / 4;
+    grid-row: 1;
+    z-index: 2;
+}
+
+.planet-info-holder .planet {
+    grid-column: 3 / 5;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.planet-info-holder .planet img {
+    border: none;
+    width: 50%;
+}
+
+.planet-info-holder:hover {
+    img {
+        animation: rotate 5s linear infinite;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
