@@ -44,6 +44,10 @@ header {
 .logo {
     grid-column: 1;
     grid-row: 1;
+    background-color: black;
+}
+
+.logo img {
     width: 60%;
 }
 
