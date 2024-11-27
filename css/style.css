@@ -78,6 +78,7 @@ header {
 header h1 {
     font-family: 'Outer Black', sans-serif;
     font-size: 3em;
+    color: #FF7D25;
     margin: 0;
     grid-column: 2;
     grid-row: 1;
@@ -106,7 +107,7 @@ header h1 {
 
 .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     padding: 15px 20px;
     display: block;
     transition: background-color 0.3s;
