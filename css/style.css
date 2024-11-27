@@ -131,8 +131,9 @@ header h1 {
 
 .main-content h2 {
     color: #FF7D25;
+    font-family: 'Outer Heavy', sans-serif;
     border-bottom: 2px solid #d6a200;
-    width: 30%;
+    width: 40%;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
