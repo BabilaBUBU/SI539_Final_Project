@@ -1,36 +1,36 @@
 const imageSequence = [
     {
-        image: 'img/branch1.png',
+        image: '../image/nomai/branch1.png',
         translation: 'We are the Nomai.',
         position: { left: '0%', top: '0%' }
     },
     {
-        image: 'img/branch1_clicked.png',
+        image: '../image/nomai/branch1_clicked.png',
         translation: 'Exploring the universe.',
         position: { left: '0%', top: '0%' }
     },
     {
-        image: 'img/branch2_clicked.png',
+        image: '../image/nomai/branch2_clicked.png',
         translation: 'Seeking knowledge.',
         position: { left: '0%', top: '0%' }
     },
     {
-        image: 'img/branch4_clicked.png',
+        image: '../image/nomai/branch4_clicked.png',
         translation: 'Building a new home.',
         position: { left: '0%', top: '0%' }
     },
     {
-        image: 'img/branch5_clicked.png',
+        image: '../image/nomai/branch5_clicked.png',
         translation: 'Creating advanced technology.',
         position: { left: '0%', top: '0%' }
     },
     {
-        image: 'img/branch3_clicked.png',
+        image: '../image/nomai/branch3_clicked.png',
         translation: 'Discovering the Eye of the Universe.',
         position: { left: '0%', top: '0%' }
     },
     {
-        image: 'img/branch6_clicked.png',
+        image: '../image/nomai/branch6_clicked.png',
         translation: 'Our journey ends here.',
         position: { left: '0%', top: '0%' }
     }

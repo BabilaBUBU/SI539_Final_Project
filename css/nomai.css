@@ -1,16 +1,13 @@
-body {
-    background-color: #0e0e0e;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    text-align: center;
+.nomai-language {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
 }
 
 #nomai-container {
     position: relative;
     width: 80%;
     max-width: 800px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
     height: auto;
 }
 
@@ -21,14 +18,21 @@ body {
     cursor: pointer;
 }
 
+.wall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+}
+
 .translation {
-    margin-top: 20px;
-    font-size: 18px;
+    /* margin-top: 20px;
+    font-size: 18px; */
     color: #00ffcc;
-    white-space: pre-wrap;
+    /* white-space: pre-wrap; */
     border: 2px dotted #e1b83e;
     border-radius: 10px;
     padding: 10px;
-    width: 60%;
-    margin: 0 auto;
+    width: 80%;
+    /* margin: 0 auto; */
 }
