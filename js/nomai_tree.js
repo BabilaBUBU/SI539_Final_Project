@@ -1,37 +1,37 @@
 const imageSequence = [
     {
         image: '../image/nomai/branch1.png',
-        translation: 'We are the Nomai.',
+        translation: 'Translation: ',
         position: { left: '0%', top: '0%' }
     },
     {
         image: '../image/nomai/branch1_clicked.png',
-        translation: 'Exploring the universe.',
+        translation: 'Greetings, traveler from the stars. ',
         position: { left: '0%', top: '0%' }
     },
     {
         image: '../image/nomai/branch2_clicked.png',
-        translation: 'Seeking knowledge.',
+        translation: 'We, the Nomai, welcome you to the endless pursuit of knowledge. ',
         position: { left: '0%', top: '0%' }
     },
     {
         image: '../image/nomai/branch4_clicked.png',
-        translation: 'Building a new home.',
+        translation: 'As you walk among our buidings and read our words, ',
         position: { left: '0%', top: '0%' }
     },
     {
         image: '../image/nomai/branch5_clicked.png',
-        translation: 'Creating advanced technology.',
+        translation: 'know that our curiosity mirrors your own. ',
         position: { left: '0%', top: '0%' }
     },
     {
         image: '../image/nomai/branch3_clicked.png',
-        translation: 'Discovering the Eye of the Universe.',
+        translation: 'May your journey through the cosmos ',
         position: { left: '0%', top: '0%' }
     },
     {
         image: '../image/nomai/branch6_clicked.png',
-        translation: 'Our journey ends here.',
+        translation: 'bring you wisdom, wonder, and connection to all that exists.',
         position: { left: '0%', top: '0%' }
     }
 ];
