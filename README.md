@@ -1,5 +1,5 @@
 # SI519-Final_Project
 
-## Reminder:
+## Reminder
 
 Add the quantum moon to appear on a random place in the solar system.
