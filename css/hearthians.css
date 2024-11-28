@@ -3,11 +3,6 @@
     font-family: 'Outer Heavy' sans-serif;
 }
 
-#gallery-wall {
-    background-image: url(../image/hearthians/gallery_background.jpg);
-    width: 100%;
-}
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -17,6 +12,8 @@
     width: 100%;
     margin: 0 auto;
     justify-content: center;
+    /* background-image: url(../image/hearthians/gallery_background.jpg);
+    background-size: cover; */
 }
 
 .card {
@@ -69,6 +66,10 @@
     font-family: 'Outer Light', sans-serif;
 }
 
+.card-back strong {
+    color: #FF7D25;
+}
+
 .card-front img {
     height: 80%;
     width: auto;
@@ -83,8 +84,18 @@
     font-size: 16px;
     padding: 20px;
     box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
 }
 
 .card p {
     text-align: center;
+}
+
+.card-back p {
+    width: 80%;
+}
+
+.card#long-card .card-back p, .card#big-card .card-back p {
+    width: 40%;
 }
