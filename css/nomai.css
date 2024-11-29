@@ -30,6 +30,11 @@
     width: 80%;
 }
 
+#tip {
+    color: #FF7D25;
+    font-family: 'Outer Heavy' sans-serif;
+}
+
 @media screen and (min-width: 800px) {
     .nomai-language {
         display: grid;
