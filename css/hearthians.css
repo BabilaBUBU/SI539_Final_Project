@@ -187,6 +187,7 @@
     
     .card-back p {
         width: 80%;
+        overflow: auto;
     }
     
     .card#long-card .card-back p, .card#big-card .card-back p {
