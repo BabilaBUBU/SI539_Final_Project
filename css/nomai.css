@@ -1,11 +1,6 @@
-.nomai-language {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;;
-}
-
 #nomai-container {
     position: relative;
-    width: 75%;
+    width: 85%;
     max-width: 800px;
     height: auto;
 }
@@ -21,6 +16,7 @@
 
 .wall {
     display: flex;
+    height: 450px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between
@@ -32,4 +28,42 @@
     border-radius: 10px;
     padding: 10px;
     width: 80%;
+}
+
+@media screen and (min-width: 800px) {
+    .nomai-language {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+    }
+    
+    #nomai-container {
+        position: relative;
+        width: 75%;
+        max-width: 800px;
+        height: auto;
+    }
+    
+    #nomai-container .nomai-image {
+        margin: 0;
+        position: absolute;
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+        border: 0.5px solid #ccc;
+    }
+    
+    .wall {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between
+    }
+    
+    .translation {
+        color: #00ffcc;
+        border: 2px dashed #d6a200;
+        border-radius: 10px;
+        padding: 10px;
+        width: 80%;
+    }
 }
