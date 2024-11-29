@@ -19,7 +19,7 @@
     height: 450px;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .translation {
@@ -56,7 +56,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between
+        justify-content: space-between;
+        height: auto;
     }
     
     .translation {
