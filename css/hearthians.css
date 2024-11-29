@@ -6,14 +6,11 @@
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(9, 200px);
-    gap: 20px;
-    padding: 20px;
+    grid-template-rows: repeat(9, 70px);
+    gap: 10px;
     width: 100%;
     margin: 0 auto;
     justify-content: center;
-    /* background-image: url(../image/hearthians/gallery_background.jpg);
-    background-size: cover; */
 }
 
 .card {
@@ -54,12 +51,12 @@
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 10px;
     box-sizing: border-box;
 }
 
 .card-front {
-    font-family: 'Outer Heavy', sans-serif;
+    padding: 5px;
+    font-family: 'Outer Light', sans-serif;
 }
 
 .card-back {
@@ -71,18 +68,15 @@
 }
 
 .card-front img {
-    height: 80%;
+    height: 70%;
     width: auto;
     object-fit: cover;
     border: none;
-    margin-bottom: 10px;
 }
 
 .card-back {
     transform: rotateY(180deg);
     color: white;
-    font-size: 16px;
-    padding: 20px;
     box-sizing: border-box;
     align-content: center;
     justify-content: center;
@@ -90,12 +84,112 @@
 
 .card p {
     text-align: center;
+    font-size: 0.8em;
 }
 
 .card-back p {
-    width: 80%;
+    width: 100%;
+    overflow: scroll;
 }
 
-.card#long-card .card-back p, .card#big-card .card-back p {
-    width: 40%;
+@media screen and (min-width: 800px) {
+    #tip {
+        color: #FF7D25;
+        font-family: 'Outer Heavy' sans-serif;
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, 200px);
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        cursor: pointer;
+        grid-row: span 2;
+    }
+    
+    .card#long-card {
+        grid-column: span 2;
+    }
+    
+    .card#big-card {
+        grid-column: span 2;
+        grid-row: span 3;
+    }
+    
+    .card:hover {
+        transform: scale(1.1);
+    }
+    
+    .card.flipped {
+        transform: scale(1.1) rotateY(180deg);
+    }
+    
+    .card-front, .card-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #5e5d5d;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .card-front {
+        font-family: 'Outer Heavy', sans-serif;
+    }
+    
+    .card-back {
+        font-family: 'Outer Light', sans-serif;
+    }
+    
+    .card-back strong {
+        color: #FF7D25;
+    }
+    
+    .card-front img {
+        height: 80%;
+        width: auto;
+        object-fit: cover;
+        border: none;
+        margin-bottom: 10px;
+    }
+    
+    .card-back {
+        transform: rotateY(180deg);
+        color: white;
+        font-size: 16px;
+        padding: 20px;
+        box-sizing: border-box;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .card p {
+        text-align: center;
+    }
+    
+    .card-back p {
+        width: 80%;
+    }
+    
+    .card#long-card .card-back p, .card#big-card .card-back p {
+        width: 40%;
+    }
 }
