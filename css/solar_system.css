@@ -5,7 +5,7 @@
 .planet-info-holder {
     display: grid;
     grid-template-columns: 1fr 0.75fr 0.75fr 1fr;
-    grid-template-rows: 0.1fr 1fr 0.9fr;
+    grid-template-rows: 0.1fr 1fr;
     column-gap: 20px;
     align-items: center;
     justify-items: start;
@@ -22,7 +22,7 @@
 }
 
 .planet-info-holder#even-holder h2{
-    grid-column: 2 / 5;
+    grid-column: 1 / -1;
 }
 
 .planet-info-holder .info{
@@ -31,13 +31,17 @@
     z-index: 2;
 }
 
+.planet-info-holder .info ul {
+    padding-left: 20px;
+}
+
 .planet-info-holder#even-holder .info{
     grid-column: 2 / 5;
 }
 
 .planet-info-holder .planet {
     grid-column: 3 / 5;
-    grid-row: 1 / -1;
+    grid-row: 2;
     z-index: 1;
 }
 
@@ -48,7 +52,7 @@
 .planet-info-holder .planet img {
     border: none;
     border-radius: 100%;
-    width: 90%;
+    width: 100%;
 }
 
 .planet-info-holder:hover {
@@ -63,5 +67,75 @@
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .navbar {
+        z-index: 100;
+    }
+    
+    .planet-info-holder {
+        display: grid;
+        grid-template-columns: 1fr 0.75fr 0.75fr 1fr;
+        grid-template-rows: 0.1fr 1fr 0.9fr;
+        column-gap: 20px;
+        align-items: center;
+        justify-items: start;
+    }
+    
+    .planet-info-holder#even-holder {
+        justify-items: end;
+    }
+    
+    .planet-info-holder h2 {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        z-index: 2;
+    }
+    
+    .planet-info-holder#even-holder h2{
+        grid-column: 2 / 5;
+    }
+    
+    .planet-info-holder .info{
+        grid-column: 1 / 4;
+        grid-row: 2;
+        z-index: 2;
+    }
+    
+    .planet-info-holder#even-holder .info{
+        grid-column: 2 / 5;
+    }
+    
+    .planet-info-holder .planet {
+        grid-column: 3 / 5;
+        grid-row: 1 / -1;
+        z-index: 1;
+    }
+    
+    .planet-info-holder#even-holder .planet {
+        grid-column: 1 / 3;
+    }
+    
+    .planet-info-holder .planet img {
+        border: none;
+        border-radius: 100%;
+        width: 90%;
+    }
+    
+    .planet-info-holder:hover {
+        img {
+            animation: rotate 20s linear infinite;
+        }
+    }
+    
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
     }
 }
