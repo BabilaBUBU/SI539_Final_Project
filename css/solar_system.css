@@ -139,3 +139,11 @@
         }
     }
 }
+
+@media all and (prefers-reduced-motion: reduce){
+    .planet-info-holder:hover {
+        img {
+            animation: none;
+        }
+    }
+}

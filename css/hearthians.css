@@ -195,3 +195,16 @@
         width: 40%;
     }
 }
+
+@media all and (prefers-reduced-motion: reduce){
+    /* disable the animation */
+    .card {
+        transition: none;
+    }
+    .card:hover {
+        transform: scale(1);
+    }
+    .card.flipped {
+        transform: scale(1) rotateY(180deg);
+    }
+}
